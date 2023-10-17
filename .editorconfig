@@ -1,0 +1,12 @@
+# http://editorcofig.org
+root = true
+[*] # 表示所有文件都适用
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+trim_trailing_whitespace = true
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false

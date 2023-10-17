@@ -1,0 +1,22 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  // 按需引入文件 记得添加
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "auto-imports.d.ts",
+    "components.d.ts",
+    "*.ts"
+  ],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    // "types": ["element-plus/global"],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "noImplicitAny": false
+  }
+}
